@@ -1,0 +1,64 @@
+header, #header-subsocial, #header-nav, .header-nav-block, #subscribe-block, #social-block, #header-subsocial-block,
+#subscribe-block, #social-block, #fa-circle-block, #slider-grid, #news-wrapper, .news-block, #articles3, .article,
+#articles-wrapper, #articles1, #boards-wrapper, #footer-wrapper, #footer-info-social {
+  display: flex;
+  -webkit-display: flex;
+}
+
+header, .news-block, #articles1, #footer-form-block {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.header-nav-block {
+  justify-content: space-around;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  -webkit-align-items: center;
+}
+
+#header-nav, #news-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -webkit-align-items: center;
+}
+
+#header-subsocial {
+  justify-content: flex-end;
+  align-items: center;
+  -webkit-justify-content: flex-end;
+  -webkit-align-items: center;
+}
+
+#header-subsocial-block {
+  justify-content: space-around;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  -webkit-align-items: center;
+}
+
+#subscribe-block, .article {
+  justify-content: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+}
+
+#social-block,
+#slider-grid {
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+#articles3 {
+  flex-wrap: wrap;
+  align-items: space-around;
+  -webkit-flex-wrap: wrap;
+  -webkit-align-items: space-around;
+}
+
+#articles1 > div {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+}
