@@ -260,7 +260,9 @@
     width: 33%;
   }
 
-  .board-block:last-child {
+  .board-block:last-child,
+  .board-block:nth-child(8),
+  .board-block:nth-child(7) {
     display: none;
   }
 

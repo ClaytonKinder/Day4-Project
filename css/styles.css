@@ -331,13 +331,13 @@ ARTICLES
   z-index: -1; }
 
 #down-arrow {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   background-color: #B4292E;
-  font-size: 1.25em;
+  font-size: 2em;
   color: white;
-  padding: 15px 0;
+  padding: 30px 0;
   position: relative;
   font-weight: lighter;
   display: none; }
