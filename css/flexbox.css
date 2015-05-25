@@ -1,5 +1,5 @@
 header, #header-subsocial, #header-nav, .header-nav-block, #subscribe-block, #social-block, #header-subsocial-block,
-#subscribe-block, #social-block, #fa-circle-block, #slider-grid, #news-wrapper, .news-block, #articles3, .article,
+#subscribe-block, #social-block, #fa-circle-block, #slider-grid, #slider-controls, #news-wrapper, .news-block, #articles3, .article,
 #articles-wrapper, #articles1, #boards-wrapper, #footer-wrapper, #footer-info-social {
   display: flex;
   -webkit-display: flex;
@@ -38,7 +38,7 @@ header, .news-block, #articles1, #footer-form-block {
   -webkit-align-items: center;
 }
 
-#subscribe-block, .article {
+#subscribe-block, .article, #slider-controls {
   justify-content: center;
   align-items: center;
   -webkit-justify-content: center;

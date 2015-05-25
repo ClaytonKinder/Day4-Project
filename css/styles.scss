@@ -221,24 +221,30 @@ SLIDER
   padding: 15px 0;
 }
 
-#slider-controls {
-  width: 20%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#slider-controls input {
+.slider-button {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  color: white;
   position: relative;
 }
 
-#slider-controls input:after {
-  content: "";
-  height: 15px;
-  width: 14px;
-  border-radius: 50%;
-  background-color: $transparent2;
+.slider2 {
+  margin: 0 10px;
+}
+
+.selected {
   position: absolute;
-  top: 5px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 10px;
+  width: 10px;
+  background-color: $red1;
+  border-radius: 50%;
 }
 
 #middle {
