@@ -1,0 +1,127 @@
+/**************************
+FOOTER
+**************************/
+
+footer {
+  background: linear-gradient(rgba(255,255,255,0.5),
+              rgba(255,255,255,0.5)),
+              url('../img/white-wall.png');
+  padding: 30px;
+}
+
+#footer-left,
+#footer-right {
+  width: 50%;
+}
+
+  /**************************
+  FOOTER - INFO/SOCIAL
+  **************************/
+
+  #footer-info-block {
+    color: $maroon1;
+  }
+
+  #footer-info-title h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+
+  #footer-info-content {
+    margin: 10px 0 20px;
+    line-height: 1.5em;
+  }
+
+  .social2 {
+    padding: 5px 10px;
+    color: $transparent;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all .25s ease;
+
+    &:hover {
+      color: white;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .social2-facebook {
+    background-color: #4F4F4F;
+
+    &:hover {
+      background-color: $facebook;
+    }
+  }
+
+  .social2-rss {
+    background-color: #AFAFAF;
+
+    &:hover {
+      background-color: $rss;
+    }
+  }
+
+  .social2-twitter {
+    background-color: #7B7B7B;
+
+    &:hover {
+      background-color: $twitter;
+    }
+  }
+
+  .social2-youtube {
+    background-color: #757575;
+
+    &:hover {
+      background-color: $youtube;
+    }
+  }
+
+  /**************************
+  FOOTER - FORM
+  **************************/
+
+  form {
+    clear: both;
+
+    > * {
+      display: block;
+      width: 95%;
+      margin: 0 auto;
+      padding: 10px;
+    }
+  }
+
+  input, textarea {
+    outline-color: $red1;
+    border-top: 4px solid #ACACAC;
+    border-left: 4px solid #ACACAC;
+    border-right: 1px solid #ACACAC;
+    border-bottom: 1px solid #ACACAC;
+  }
+
+  input[type=email] {
+    margin: 10px auto;
+  }
+
+  textarea {
+    resize: none;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  button[type=submit] {
+    width: 50%;
+    margin-right: 2.5%;
+    background-color: $red1;
+    color: white;
+    border: 0;
+    transition: all .25s ease;
+
+    &:hover {
+      background-color: $red2;
+    }
+  }

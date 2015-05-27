@@ -1,0 +1,109 @@
+/**************************
+HEADER
+**************************/
+
+header {
+  color: white;
+  padding-top: 5px;
+}
+
+#header-subsocial-block {
+  width: 50%;
+}
+
+#subscribe-block {
+  width: 40%
+}
+
+#social-block {
+  width: 60%;
+}
+
+  /**************************
+  HEADER - SOCIAL
+  **************************/
+
+  #social-block {
+    > div {
+      margin-right: 5%;
+    }
+    > div:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .social1 {
+    position: relative;
+    font-size: 2em;
+    padding: 10px 0;
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    color: $transparent;
+    transition: all .25s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .fa-ellipsis-v {
+    font-size: 1.5em;
+  }
+
+  .fa-circle {
+    font-size: 6px;
+  }
+
+  #fa-circle-block {
+    margin-left: 10px;
+  }
+
+  .social1-facebook {
+    background-color: $facebook;
+  }
+
+  .social1-rss {
+    background-color: $rss;
+  }
+
+  .social1-twitter {
+    background-color: $twitter;
+  }
+
+  .social1-youtube {
+    background-color: $youtube;
+  }
+
+  /**************************
+  HEADER - NAV
+  **************************/
+
+  #header-nav {
+    margin-top: 10px;
+  }
+
+  .header-nav-block {
+    width: 24%;
+    background-color: $red1;
+    padding: 10px 5px;
+    -webkit-transition: all .25s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $red2;
+    }
+
+    &:hover .dash {
+      -webkit-transform: rotate(90deg) translateY(-5px) translateX(5px);
+    }
+  }
+
+  .dash {
+    position: relative;
+    bottom: 5px;
+    font-size: 3em;
+    line-height: 0;
+    -webkit-transition: all .25s ease;
+  }

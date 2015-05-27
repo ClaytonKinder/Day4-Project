@@ -1,0 +1,83 @@
+/**************************
+SLIDER
+**************************/
+
+#slider-wrapper {
+  padding-top: 15px;
+}
+
+#slider-image-block {
+  padding: 10px;
+  background-color: white;
+}
+
+#slider-image {
+  height: $sliderHeight;
+  background: url('../img/top-image.png');
+  background-size: 120%;
+  background-position: 20% 20%;
+  position: relative;
+  z-index: 1;
+}
+
+#slider-grid {
+  height: $sliderHeight;
+  width: 100%;
+  display: block;
+  position: relative;
+
+  &:after {
+    content: "";
+    background: url('../img/grid.png');
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+#slider-logo {
+  opacity: 1;
+  z-index: 2;
+  height: 237px;
+  width: 410px;
+  background: url('../img/peralta-logo.png');
+  margin-left: 2.5%;
+}
+
+#slider-controls-block {
+  padding: 15px 0;
+}
+
+.slider-button {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  color: white;
+  position: relative;
+}
+
+.slider2 {
+  margin: 0 10px;
+}
+
+.selected {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 10px;
+  width: 10px;
+  background-color: $red1;
+  border-radius: 50%;
+}
+
+#middle {
+  margin: 0 8px;
+}

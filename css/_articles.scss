@@ -1,0 +1,178 @@
+/**************************
+ARTICLES
+**************************/
+
+#articles-wrapper {
+  margin-top: 50px;
+  position: relative;
+}
+
+.article {
+  > div {
+    text-align: center;
+    color: white;
+  }
+
+  > div > h2 {
+    font-size: 3em;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.1em;
+  }
+}
+
+  /**************************
+  ARTICLES - ARTICLES3
+  **************************/
+
+  #articles3 {
+    width: 66.25%;
+    margin-right: 1.25%;
+
+    > div {
+      width: 49%;
+      height: 225px;
+      padding: 5px;
+      background-color: white;
+    }
+
+    > div:first-child {
+      margin-right: 2%;
+      margin-bottom: 5px;
+    }
+
+    > div:nth-child(2) {
+      margin-bottom: 5px;
+    }
+
+    > div:last-child {
+      width: 100%;
+    }
+
+    > div > div {
+      height: 100%;
+    }
+  }
+
+  #article1 {
+    background-image: url('../img/sk8er-4.png');
+    background-position: 85% 30%;
+    position: relative;
+  }
+
+  #article2 {
+    background-image: url('../img/sk8er-3.png');
+  }
+
+  #article3 {
+    background-image: url('../img/sk8er-1.png');
+    background-position: 20% 60%;
+  }
+
+  /**************************
+  ARTICLES - ARTICLES1
+  **************************/
+
+  #articles1 {
+    width: 32.5%;
+  }
+
+  #articles1 > div {
+    height: 100%;
+    padding: 5px;
+    background-color: white;
+    position: relative;
+  }
+
+  #article4 {
+    background-image: url('../img/sk8er-2.png');
+    background-position: 80% 50%;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+  }
+
+  /**************************
+  ARTICLES - ARROWS
+  **************************/
+
+  #side-arrow {
+    position: absolute;
+    top: 20%;
+    right: 104%;
+    padding: 15px;
+    background-color: $red1;
+    font-size: 1.25em;
+    color: white;
+    font-weight: lighter;
+  }
+
+  #side-arrow-point {
+    margin: auto;
+    position: absolute;
+  	width: 0;
+  	height: 0;
+    top: 0px;
+    bottom: 0;
+    /* 28.7px */
+    right: $triangleRight;
+  	border-top: $triangleSize solid transparent;
+  	border-bottom: $triangleSize solid transparent;
+  	border-left: $triangleSize solid $red1;
+
+    &:after {
+      content: "";
+      margin: auto;
+      position: absolute;
+    	width: 0;
+    	height: 0;
+      top: 10px;
+      bottom: 0;
+      right: 0;
+      /* 28.7px */
+    	border-top: $triangleSize solid transparent;
+    	border-bottom: $triangleSize solid transparent;
+    	border-left: $triangleSize solid $transparent;
+      z-index: -1;
+    }
+  }
+
+  #down-arrow {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: $red1;
+    font-size: 2em;
+    color: white;
+    padding: 30px 0;
+    position: relative;
+    font-weight: lighter;
+    display: none;
+  }
+
+  #down-arrow-point {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+    margin: 0 auto;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 40px solid $red1;
+  }
+
+  #down-arrow-border {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -80px;
+    right: 0;
+    bottom: -5px;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 40px solid $transparent;
+    z-index: -2;
+  }
