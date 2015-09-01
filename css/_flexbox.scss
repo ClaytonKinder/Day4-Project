@@ -5,64 +5,94 @@ FLEXBOX
 header, #header-subsocial, #header-nav, .header-nav-block, #subscribe-block, #social-block, #header-subsocial-block,
 #subscribe-block, #social-block, #fa-circle-block, #slider-grid, #slider-controls, #news-wrapper, .news-block, #articles3, .article,
 #articles-wrapper, #articles1, #boards-wrapper, #footer-wrapper, #footer-info-social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-display: flex;
 }
 
 header, .news-block, #articles1, #footer-form-block {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .header-nav-block {
-  justify-content: space-around;
-  align-items: center;
   -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
   -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
 }
 
 #header-nav, #news-wrapper {
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
   -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
 }
 
 #header-subsocial {
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
   -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
 }
 
 #header-subsocial-block {
-  justify-content: space-around;
-  align-items: center;
   -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
   -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
 }
 
 #subscribe-block, .article, #slider-controls {
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
   -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
   -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
 }
 
 #social-block,
 #slider-grid {
-  align-items: center;
+  -webkit-box-align: center;
   -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #articles3 {
-  flex-wrap: wrap;
-  align-items: space-around;
   -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: space-around;
   -webkit-align-items: space-around;
+  -ms-flex-align: space-around;
+          align-items: space-around;
 }
 
 #articles1 > div {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
