@@ -249,7 +249,9 @@ SLIDER
   height: 237px;
   width: 410px;
   background: url("../img/peralta-logo.png");
-  margin-left: 2.5%; }
+  margin-left: 2.5%;
+  position: relative;
+  top: 30px; }
 
 #slider-controls-block {
   padding: 15px 0; }
